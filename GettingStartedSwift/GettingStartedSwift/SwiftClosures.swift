@@ -23,4 +23,15 @@ class SwiftClosures {
     values from their surrounding context
 
     */
+	
+	func closureExample() {
+		let names = ["Alan","Claire","Lola","Teddy"]
+		
+		func backwards(s1:String, _ s2:String) -> Bool {
+			return s1 > s2
+		}
+		
+		print(names.sort(backwards))
+		
+	}
 }

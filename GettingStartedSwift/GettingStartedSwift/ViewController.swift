@@ -62,23 +62,34 @@ class ViewController: UIViewController {
 //        SwiftControlTransferStatements.greet(["name":"john"]);
 //        SwiftControlTransferStatements.greet(["name":"john", "location":"Dublin"])
         
-        let swiftFunctionsInstance = SwiftFunctions()
-        print(swiftFunctionsInstance.sayHello("Alan"))
-        print(swiftFunctionsInstance.sayHello("Tim", alreadyGreeted: true))
-        print(swiftFunctionsInstance.printAndCount("Hello world"))
-        swiftFunctionsInstance.printWithoutCounting("Hello World")
-        
-        let minMaxValues = swiftFunctionsInstance.minMax([8,-6,1,2,5,4,-13,12])
-        print(minMaxValues.min)
-        print(minMaxValues.max)
-        
-        let functionParamterExamples = swiftFunctionsInstance.someFunction(1, secondParameterName: 2)
-        swiftFunctionsInstance.defaultParameterFunction(13)
-        swiftFunctionsInstance.defaultParameterFunction()
-        
-        var mathFunction:(Int, Int) -> Int = swiftFunctionsInstance.addTwoInts
-        print("Result: \(mathFunction(2,3))")
-    
+//        let swiftFunctionsInstance = SwiftFunctions()
+//        print(swiftFunctionsInstance.sayHello("Alan"))
+//        print(swiftFunctionsInstance.sayHello("Tim", alreadyGreeted: true))
+//        print(swiftFunctionsInstance.printAndCount("Hello world"))
+//        swiftFunctionsInstance.printWithoutCounting("Hello World")
+//        
+//        let minMaxValues = swiftFunctionsInstance.minMax([8,-6,1,2,5,4,-13,12])
+//        print(minMaxValues.min)
+//        print(minMaxValues.max)
+//        
+//        let functionParamterExamples = swiftFunctionsInstance.someFunction(1, secondParameterName: 2)
+//        swiftFunctionsInstance.defaultParameterFunction(13)
+//        swiftFunctionsInstance.defaultParameterFunction()
+//        
+//        var mathFunction:(Int, Int) -> Int = swiftFunctionsInstance.addTwoInts
+//        print("Result: \(mathFunction(2,3))")
+
+//		let variableParameters = SwiftFunctions().variableParameterFunction("Hello", totalLength: 10, pad: "-");
+//		print(variableParameters)
+
+		var intA: Int = 1
+		var intB: Int = 5
+		let inOutParameters = SwiftFunctions().swapTwoInts(&intA, b: &intB)
+		print("intA is now \(intA) and intB is now \(intB) .")
+		
+		let closureExample = SwiftClosures()
+		closureExample.closureExample()
+		
 	}
     
 	

@@ -52,18 +52,71 @@ class SwiftFunctions {
         }
         return (currentMin, currentMax)
     }
-    
+	
+	/***
+	*	function Paramter Names - important for understanding the "_" in the parameters of a function
+	*/
+	
     func someFunction(firstParameterName: Int, secondParameterName: Int) {
         // function body goes here
         // firstParameterName and secondParamterName refer to the arguements
         // values for the first and second paramter
     }
-    
+	
+	func someFunctionTwo(firstParameterName: Int,_ secondParameterName: Int) {
+		// function body goes here
+		// firstParameterName and secondParamterName refer to the arguements
+		// values for the first and second paramter
+		// note the _ before secondParamterName and refer to the test method
+		// the underscore allows you to omit it from the
+	}
+	
+	func someFunctionThree(externalParamterName internalParameterName: Int) {
+		print(internalParameterName);
+//		print(externalParameterName); - Doesnt work as external paramter name is what is specified externally
+	}
+	
+	func testSomeFunction() {
+		self.someFunction(1, secondParameterName: 2)
+	}
+	
+	func testSomeFunctionTwo() {
+		self.someFunctionTwo(1, 2);
+	}
+	
+	func testSomeFunctionThree() {
+		self.someFunctionThree(externalParamterName: 10);
+	}
+	
     func defaultParameterFunction(parameterWithDefaultValue:Int = 12) {
         // Function body goes here.
         print(parameterWithDefaultValue)
     }
-    
+	
+	/**
+	*	Variable Paramters
+	*/
+	func variableParameterFunction(var string:String, totalLength: Int, pad:Character) -> String {
+		let amountToPad = totalLength - string.characters.count
+		if amountToPad < 1 {
+			return string
+		}
+		let padString = String(pad)
+		for _ in 1...amountToPad {
+			string = padString + string
+		}
+		return string
+	}
+
+	/**
+	*	functions with inOut parameters
+	*/
+	func swapTwoInts(inout a: Int, inout _ b: Int) {
+		let temporaryA = a
+		a = b
+		b = temporaryA
+	}
+	
     /**
     *   using function types
     */
