@@ -82,14 +82,26 @@ class ViewController: UIViewController {
 //		let variableParameters = SwiftFunctions().variableParameterFunction("Hello", totalLength: 10, pad: "-");
 //		print(variableParameters)
 
-		var intA: Int = 1
-		var intB: Int = 5
-		let inOutParameters = SwiftFunctions().swapTwoInts(&intA, b: &intB)
-		print("intA is now \(intA) and intB is now \(intB) .")
-		
+//		var intA: Int = 1
+//		var intB: Int = 5
+//		let inOutParameters = SwiftFunctions().swapTwoInts(&intA, &intB)
+//		print("intA is now \(intA) and intB is now \(intB) .")
+//		
 		let closureExample = SwiftClosures()
 		closureExample.closureExample()
-		
+        closureExample.closureExample2()
+        closureExample.closureExample3()
+        closureExample.closureExample4()
+        
+        closureExample.someFunctionThatTakesAClosure { () -> Void in
+            //closure body goes here.
+        }
+        
+        closureExample.someFunctionThatTakesAClosure() {
+            //trailing closure's body goes here.
+        }
+        closureExample.closureExample6()
+        
 	}
     
 	
