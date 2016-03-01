@@ -10,7 +10,7 @@ import Foundation
 
 class SwiftClosures {
     /**
-     *  CLosures are self contained blocks of functionality that can be passed around and used in your code.
+     * Closures are self contained blocks of functionality that can be passed around and used in your code.
      Closures in swift are similar to blocks in C and objective-C
      
      Global and nested functions are special types of closures
@@ -30,7 +30,8 @@ class SwiftClosures {
         func backwards(s1:String, _ s2:String) -> Bool {
             return s1 > s2
         }
-        print(names.sort(backwards))
+		
+		print(names.sort(backwards))
     }
     
     /**
@@ -110,4 +111,15 @@ class SwiftClosures {
         print(strings)
 
     }
+	
+	func makeIncrimenter(forIncriment amount: Int) -> () -> Int {
+		var runningTotal = 0
+		func incrimenter() -> Int {
+			runningTotal += amount
+			return runningTotal
+		}
+		return incrimenter
+	}
+	
+	
 }
