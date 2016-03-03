@@ -18,6 +18,13 @@ class SwiftControlTransferStatements {
     return
     throw
     */
+	
+	func testingSwiftcontrolTransferStatements() {
+		SwiftControlTransferStatements.continueExample()
+		SwiftControlTransferStatements.fallthroughExample()
+		SwiftControlTransferStatements.greet(["name":"john"]);
+		SwiftControlTransferStatements.greet(["name":"john", "location":"Dublin"])
+	}
     
     class func continueExample(){
         /// the confinue statement tells a loop to stop what it is doing and start again

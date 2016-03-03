@@ -9,7 +9,44 @@
 import Foundation
 
 class SwiftFunctions {
-    
+	
+	func testingSwiftFunctions() {
+		let swiftFunctionsInstance = SwiftFunctions()
+		print(swiftFunctionsInstance.sayHello("Alan"))
+		print(swiftFunctionsInstance.sayHello("Tim", alreadyGreeted: true))
+		print(swiftFunctionsInstance.printAndCount("Hello world"))
+		swiftFunctionsInstance.printWithoutCounting("Hello World")
+		
+		let curried = SwiftFunctions.curriedFunction
+		let name = curried(swiftFunctionsInstance)("Alan")
+		print(name)
+		
+		
+		let minMaxValues = swiftFunctionsInstance.minMax([8,-6,1,2,5,4,-13,12])
+		print(minMaxValues.min)
+		print(minMaxValues.max)
+		
+		let functionParamterExamples = swiftFunctionsInstance.someFunction(1, secondParameterName: 2)
+		swiftFunctionsInstance.defaultParameterFunction(13)
+		swiftFunctionsInstance.defaultParameterFunction()
+		
+		var mathFunction:(Int, Int) -> Int = swiftFunctionsInstance.addTwoInts
+		print("Result: \(mathFunction(2,3))")
+		
+		let variableParameters = SwiftFunctions().variableParameterFunction("Hello", totalLength: 10, pad: "-");
+		print(variableParameters)
+		
+		var intA: Int = 1
+		var intB: Int = 5
+		let inOutParameters = SwiftFunctions().swapTwoInts(&intA, &intB)
+		print("intA is now \(intA) and intB is now \(intB) .")
+		
+	}
+	
+	func curriedFunction(name: String) -> String {
+		return "Hello World, " + name
+	}
+	
     func sayHello(personName:String) -> String {
         let greeting = "hello, \(personName)"
         return greeting
@@ -63,7 +100,7 @@ class SwiftFunctions {
         // values for the first and second paramter
     }
 	
-	func someFunctionTwo(firstParameterName: Int,_ secondParameterName: Int) {
+	func someFunctionTwo(firstParameterName: Int, _ secondParameterName: Int) {
 		// function body goes here
 		// firstParameterName and secondParamterName refer to the arguements
 		// values for the first and second paramter
@@ -74,6 +111,27 @@ class SwiftFunctions {
 	func someFunctionThree(externalParamterName internalParameterName: Int) {
 		print(internalParameterName);
 //		print(externalParameterName); - Doesnt work as external paramter name is what is specified externally
+	}
+	
+	func moreExternalParameterNames1(firstName: String, secondName: String) {
+		print(firstName + " " + secondName)
+	}
+	
+	func moreExternalParameterNames2(firstName firstName: String, secondName: String) {
+		print(firstName + " " + secondName)
+	}
+	
+	func testMoreExternalParameterNames() {
+	/**
+		Notice how the first paramter doesnt have a name, but the second one does.
+	*/
+//		moreExternalParameterNames1("Alan", secondName: "O'Connor")
+		
+	/*
+		By definining the external parameter name for the first name, its visible when using the method.
+	*/
+		
+//		moreExternalParameterNames2(firstName: "Alan", secondName: "O'Connor")
 	}
 	
 	func testSomeFunction() {
@@ -137,4 +195,5 @@ class SwiftFunctions {
         }
         return backwards ? stepBackward : stepForward
     }
+	
 }

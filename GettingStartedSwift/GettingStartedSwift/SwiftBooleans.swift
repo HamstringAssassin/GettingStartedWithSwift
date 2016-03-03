@@ -11,7 +11,12 @@ import Foundation
 class SwiftBooleans {
 
     static var turnipsAreDelicious:Bool = true
-    
+	
+	func testingSwiftBooleans(){
+		SwiftBooleans.boolsAndTypeInference()
+		SwiftBooleans.niceFoods()
+	}
+	
     class func niceFoods() {
         if turnipsAreDelicious {
             print("mmm, tasty")

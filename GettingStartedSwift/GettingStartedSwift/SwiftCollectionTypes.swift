@@ -17,7 +17,14 @@ import Foundation
 */
 
 class SwiftCollectionTypes {
-    
+	
+	func testingSwiftCollectionTypes() {
+		SwiftCollectionTypes.arrayWithRepeatableVlaue()
+		SwiftCollectionTypes.setOperations()
+		SwiftCollectionTypes.setMembershipAndEquality()
+		SwiftCollectionTypes.creatingDictionaries()
+	}
+	
     class func createEmptyArray() {
         var someInts = [Int]()
         var someIntsFull = Array<Int>()

@@ -9,6 +9,14 @@
 import Foundation
 
 class SwiftStrings {
+	
+	func testingSwiftStrings() {
+		SwiftStrings.stringCharacters()
+		SwiftStrings.specialCharatersInStringLiterals()
+		SwiftStrings.specialCharactersCounting()
+		SwiftStrings.stringIndexes()
+		SwiftStrings.insertingAndRemovingWithStrings()
+	}
     
     class func checkingStringContents() {
         let emptyString = ""

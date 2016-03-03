@@ -18,6 +18,11 @@ class ConstantsAndVariables {
 	// Stored properties without an initial value prevent systesized initialisers
 	var welcomeMessage:String = ""
 	
+	func testingConstantsAndVariables(){
+		ConstantsAndVariables.IntMaxes()
+		ConstantsAndVariables.typeInference()
+	}
+	
 	func printingConstants() {
 		var friendlyWelcome = "Hello!"
 		friendlyWelcome = "Bonjour!"

@@ -21,7 +21,9 @@ class SwiftErrorHandling {
     and if necessary propage it to another part of the program
     */
 
-
+	func testingSwiftErrorHandling() {
+		
+	}
     
     class func canThrowError() throws {
 

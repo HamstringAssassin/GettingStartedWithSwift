@@ -9,7 +9,11 @@
 import Foundation
 
 class SwiftTuples {
-    
+	
+	func testingSwiftTuples() {
+		SwiftTuples.exampleTuple()
+	}
+	
     class func exampleTuple() {
 //      tuples such as the one below can be described as "a tuple of type (int, string)"
         let http404Error = (404, "Not Found")

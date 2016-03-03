@@ -23,7 +23,25 @@ class SwiftClosures {
      values from their surrounding context
      
      */
-    
+	
+	func testingSwiftClosures() {
+		
+		let closureExample = SwiftClosures()
+		closureExample.closureExample()
+		closureExample.closureExample2()
+		closureExample.closureExample3()
+		closureExample.closureExample4()
+		
+		closureExample.someFunctionThatTakesAClosure { () -> Void in
+			//closure body goes here.
+		}
+		
+		closureExample.someFunctionThatTakesAClosure() {
+			//trailing closure's body goes here.
+		}
+		closureExample.closureExample6()
+	}
+	
     func closureExample() {
         let names = ["Alan","Claire","Lola","Teddy"]
         
@@ -44,8 +62,7 @@ class SwiftClosures {
         })
         print(reversed)
     }
-    
-    
+	
     /**
      Because the sprting closure is passed as an arguement to a method, swift
      can infer the types of its paramters and the type of the value it returns

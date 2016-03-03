@@ -9,7 +9,12 @@
 import Foundation
 
 class SwiftOptionals {
-    
+	
+	func testingSwiftOptions() {
+		SwiftOptionals.optionalsExample()
+		SwiftOptionals.implicitUnwrappedOptionals()
+	}
+	
     class func optionalsExample() {
         let possibleNumber = "123"
         let convertedNumber = Int(possibleNumber)

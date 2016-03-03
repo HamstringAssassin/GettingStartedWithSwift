@@ -33,77 +33,22 @@ class ViewController: UIViewController {
 //		startingGenerics()
 //		let t = RepeatGeneric()
 //		print(t.anyCommonElements([1,2,3,4,54], [4]))
-        
-        
-//        ConstantsAndVariables.IntMaxes()
-//        ConstantsAndVariables.typeInference()
-
-//        SwiftTuples.exampleTuple()
-        
-//        SwiftOptionals.optionalsExample()
-//        SwiftOptionals.implicitUnwrappedOptionals()
-        
-//        SwiftStrings.stringCharacters()
-//        SwiftStrings.specialCharatersInStringLiterals()
-//        SwiftStrings.specialCharactersCounting()
-//        SwiftStrings.stringIndexes()
-//        SwiftStrings.insertingAndRemovingWithStrings()
-        
-//        SwiftCollectionTypes.arrayWithRepeatableVlaue()
-//        SwiftCollectionTypes.setOperations()
-//        SwiftCollectionTypes.setMembershipAndEquality()
-//        SwiftCollectionTypes.creatingDictionaries()
 		
-//        SwiftControlFlow.chutesAndLadders()
-//        SwiftControlFlow.intervalMatchingWithSwitchStatements()
-        
-//        SwiftControlTransferStatements.continueExample()
-//        SwiftControlTransferStatements.fallthroughExample()
-//        SwiftControlTransferStatements.greet(["name":"john"]);
-//        SwiftControlTransferStatements.greet(["name":"john", "location":"Dublin"])
-        
-//        let swiftFunctionsInstance = SwiftFunctions()
-//        print(swiftFunctionsInstance.sayHello("Alan"))
-//        print(swiftFunctionsInstance.sayHello("Tim", alreadyGreeted: true))
-//        print(swiftFunctionsInstance.printAndCount("Hello world"))
-//        swiftFunctionsInstance.printWithoutCounting("Hello World")
-//        
-//        let minMaxValues = swiftFunctionsInstance.minMax([8,-6,1,2,5,4,-13,12])
-//        print(minMaxValues.min)
-//        print(minMaxValues.max)
-//        
-//        let functionParamterExamples = swiftFunctionsInstance.someFunction(1, secondParameterName: 2)
-//        swiftFunctionsInstance.defaultParameterFunction(13)
-//        swiftFunctionsInstance.defaultParameterFunction()
-//        
-//        var mathFunction:(Int, Int) -> Int = swiftFunctionsInstance.addTwoInts
-//        print("Result: \(mathFunction(2,3))")
+		
+//		ConstantsAndVariables().testingConstantsAndVariables()
+//		SwiftBooleans().testingSwiftBooleans()
+//		SwiftTuples().testingSwiftTuples()
+//		SwiftOptionals().testingSwiftOptions()
+//		SwiftErrorHandling().testingSwiftErrorHandling()
+//		SwiftStrings().testingSwiftStrings()
+//		SwiftCollectionTypes().testingSwiftCollectionTypes()
+//		SwiftControlFlow().testingSwiftControlFlow()
+//		SwiftControlTransferStatements().testingSwiftcontrolTransferStatements()
+//		SwiftFunctions().testingSwiftFunctions()
 
-//		let variableParameters = SwiftFunctions().variableParameterFunction("Hello", totalLength: 10, pad: "-");
-//		print(variableParameters)
-
-//		var intA: Int = 1
-//		var intB: Int = 5
-//		let inOutParameters = SwiftFunctions().swapTwoInts(&intA, &intB)
-//		print("intA is now \(intA) and intB is now \(intB) .")
-//		
-		let closureExample = SwiftClosures()
-		closureExample.closureExample()
-        closureExample.closureExample2()
-        closureExample.closureExample3()
-        closureExample.closureExample4()
-        
-        closureExample.someFunctionThatTakesAClosure { () -> Void in
-            //closure body goes here.
-        }
-        
-        closureExample.someFunctionThatTakesAClosure() {
-            //trailing closure's body goes here.
-        }
-        closureExample.closureExample6()
-        
+		SwiftClosures().testingSwiftClosures()
+		
 	}
-    
 	
 	func optionalType() {
 		var possibleIntegers:OptionalValue<Int> = OptionalValue.None

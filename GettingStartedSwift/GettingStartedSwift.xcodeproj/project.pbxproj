@@ -41,6 +41,7 @@
 		8070992A1C04B134008BA6A3 /* Suit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807099291C04B134008BA6A3 /* Suit.swift */; };
 		8070992C1C04BA90008BA6A3 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8070992B1C04BA90008BA6A3 /* Card.swift */; };
 		80763C331C3A866300C49418 /* SwiftControlFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80763C321C3A866300C49418 /* SwiftControlFlow.swift */; };
+		80C6B3B91C88705E008CAAA7 /* CurryingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C6B3B81C88705E008CAAA7 /* CurryingFunctions.swift */; };
 		80DAA9501C0CA63700285F3D /* RepeatGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DAA94F1C0CA63700285F3D /* RepeatGeneric.swift */; };
 		80DAA9521C0CAF0100285F3D /* OptionalValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DAA9511C0CAF0100285F3D /* OptionalValue.swift */; };
 		80E9D9E31C03488C00B47055 /* TriangleAndSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9D9E21C03488C00B47055 /* TriangleAndSquare.swift */; };
@@ -96,6 +97,7 @@
 		807099291C04B134008BA6A3 /* Suit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Suit.swift; sourceTree = "<group>"; };
 		8070992B1C04BA90008BA6A3 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		80763C321C3A866300C49418 /* SwiftControlFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftControlFlow.swift; sourceTree = "<group>"; };
+		80C6B3B81C88705E008CAAA7 /* CurryingFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurryingFunctions.swift; sourceTree = "<group>"; };
 		80DAA94F1C0CA63700285F3D /* RepeatGeneric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatGeneric.swift; sourceTree = "<group>"; };
 		80DAA9511C0CAF0100285F3D /* OptionalValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalValue.swift; sourceTree = "<group>"; };
 		80E9D9E21C03488C00B47055 /* TriangleAndSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleAndSquare.swift; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 				609327A01C4AF70000B614C2 /* SwiftControlTransferStatements.swift */,
 				609327A21C4BE1DF00B614C2 /* SwiftFunctions.swift */,
 				607D2AF61C4C256200D45573 /* SwiftClosures.swift */,
+				80C6B3B81C88705E008CAAA7 /* CurryingFunctions.swift */,
 			);
 			name = "The Basics";
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				8032A6631BD7E051009FB051 /* NamedShape.swift in Sources */,
 				8032A65D1BD7D1C2009FB051 /* ConditionalsAndLoops.swift in Sources */,
 				805CB8FF1BD63A890014C23D /* ViewController.swift in Sources */,
+				80C6B3B91C88705E008CAAA7 /* CurryingFunctions.swift in Sources */,
 				807099281C0464F1008BA6A3 /* Rank.swift in Sources */,
 				609870901C2C6B9F006D4CD6 /* SwiftErrorHandling.swift in Sources */,
 				800FAC521C07177F0005C8C5 /* ServerResponse.swift in Sources */,

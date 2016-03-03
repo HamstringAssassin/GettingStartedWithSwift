@@ -10,6 +10,11 @@ import Foundation
 
 class SwiftControlFlow {
 	
+	func testingSwiftControlFlow(){
+		SwiftControlFlow.chutesAndLadders()
+		SwiftControlFlow.intervalMatchingWithSwitchStatements()
+	}
+	
 	/**
 	A while loop performs a set of statements until a condition becomes false
 	*/
