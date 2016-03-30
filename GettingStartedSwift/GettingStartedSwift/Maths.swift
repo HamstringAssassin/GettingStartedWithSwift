@@ -10,6 +10,13 @@ import Foundation
 
 class Maths {
 
+	func testMaths(){
+		self.printStatistics()
+		print(self.sumOf())
+		print(self.sumOf(42, 35, 77))
+		print("Median is : \(self.calculateMedian(12,34,23,34,56,34)) ")
+	}
+	
 	func calculateMedian(numbers:Int...) -> Int {
 		var median = 0
 		var num = 0

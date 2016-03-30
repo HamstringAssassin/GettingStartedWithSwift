@@ -10,6 +10,17 @@ import UIKit
 
 class Basics: NSObject {
 	
+	func testBasics() {
+		let basics = Basics()
+		basics.basicVariables()
+		basics.basicStrings()
+	}
+	
+	func greet (name:String, day:String) -> String {
+		return "Hello \(name), today is \(day)"
+	}
+
+	
 	func basicStrings() {
 		//Strings
 		let label = "the width is "

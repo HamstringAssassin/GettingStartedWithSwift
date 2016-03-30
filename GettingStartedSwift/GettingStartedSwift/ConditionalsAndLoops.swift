@@ -10,6 +10,15 @@ import Foundation
 
 class ConditionalsAndLoops {
 	
+	func testConditionalsAndLoops(){
+		self.forloops()
+		self.ifLoops()
+		self.switches()
+		self.controlFlow()
+		self.whileAndRepeat()
+		self.ranges()
+	}
+	
 	func ranges () {
 		//Ranges. You can keep an index in a loop by using ..< to make a range of indexes or by writing an explicit initilization, condition and incriment
 		

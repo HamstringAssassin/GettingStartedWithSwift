@@ -11,6 +11,12 @@ import Foundation
 class Shape {
 	var numOfSides = 0
 	
+	func testShape(){
+		let shape = Shape()
+		shape.numOfSides = 7
+		print(shape.simpleDescription())
+	}
+	
 	func simpleDescription() -> String {
 		return "A shape with \(numOfSides) sides."
 	}

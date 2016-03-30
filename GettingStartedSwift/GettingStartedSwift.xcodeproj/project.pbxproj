@@ -41,6 +41,9 @@
 		8070992A1C04B134008BA6A3 /* Suit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807099291C04B134008BA6A3 /* Suit.swift */; };
 		8070992C1C04BA90008BA6A3 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8070992B1C04BA90008BA6A3 /* Card.swift */; };
 		80763C331C3A866300C49418 /* SwiftControlFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80763C321C3A866300C49418 /* SwiftControlFlow.swift */; };
+		8080180D1C9303C3004E5432 /* TestEnumsAndStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8080180C1C9303C3004E5432 /* TestEnumsAndStructs.swift */; };
+		8080180F1C930426004E5432 /* TestGenerics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8080180E1C930426004E5432 /* TestGenerics.swift */; };
+		808018111C930496004E5432 /* TestProtocolsAndExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808018101C930496004E5432 /* TestProtocolsAndExtensions.swift */; };
 		80C6B3B91C88705E008CAAA7 /* CurryingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C6B3B81C88705E008CAAA7 /* CurryingFunctions.swift */; };
 		80DAA9501C0CA63700285F3D /* RepeatGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DAA94F1C0CA63700285F3D /* RepeatGeneric.swift */; };
 		80DAA9521C0CAF0100285F3D /* OptionalValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DAA9511C0CAF0100285F3D /* OptionalValue.swift */; };
@@ -97,6 +100,9 @@
 		807099291C04B134008BA6A3 /* Suit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Suit.swift; sourceTree = "<group>"; };
 		8070992B1C04BA90008BA6A3 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		80763C321C3A866300C49418 /* SwiftControlFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftControlFlow.swift; sourceTree = "<group>"; };
+		8080180C1C9303C3004E5432 /* TestEnumsAndStructs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEnumsAndStructs.swift; sourceTree = "<group>"; };
+		8080180E1C930426004E5432 /* TestGenerics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestGenerics.swift; sourceTree = "<group>"; };
+		808018101C930496004E5432 /* TestProtocolsAndExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestProtocolsAndExtensions.swift; sourceTree = "<group>"; };
 		80C6B3B81C88705E008CAAA7 /* CurryingFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurryingFunctions.swift; sourceTree = "<group>"; };
 		80DAA94F1C0CA63700285F3D /* RepeatGeneric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatGeneric.swift; sourceTree = "<group>"; };
 		80DAA9511C0CAF0100285F3D /* OptionalValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalValue.swift; sourceTree = "<group>"; };
@@ -172,6 +178,7 @@
 				800FAC561C072B020005C8C5 /* SimpleClass.swift */,
 				800FAC581C0746400005C8C5 /* SimpleStructure.swift */,
 				800FAC5A1C0749390005C8C5 /* SimpleEnum.swift */,
+				808018101C930496004E5432 /* TestProtocolsAndExtensions.swift */,
 			);
 			name = "Protocols and Extensions";
 			sourceTree = "<group>";
@@ -239,6 +246,7 @@
 				807099291C04B134008BA6A3 /* Suit.swift */,
 				8070992B1C04BA90008BA6A3 /* Card.swift */,
 				800FAC511C07177F0005C8C5 /* ServerResponse.swift */,
+				8080180C1C9303C3004E5432 /* TestEnumsAndStructs.swift */,
 			);
 			name = "Enum and Structs";
 			sourceTree = "<group>";
@@ -248,6 +256,7 @@
 			children = (
 				80DAA94F1C0CA63700285F3D /* RepeatGeneric.swift */,
 				80DAA9511C0CAF0100285F3D /* OptionalValue.swift */,
+				8080180E1C930426004E5432 /* TestGenerics.swift */,
 			);
 			name = Generics;
 			sourceTree = "<group>";
@@ -401,9 +410,11 @@
 				805CB8FF1BD63A890014C23D /* ViewController.swift in Sources */,
 				80C6B3B91C88705E008CAAA7 /* CurryingFunctions.swift in Sources */,
 				807099281C0464F1008BA6A3 /* Rank.swift in Sources */,
+				8080180F1C930426004E5432 /* TestGenerics.swift in Sources */,
 				609870901C2C6B9F006D4CD6 /* SwiftErrorHandling.swift in Sources */,
 				800FAC521C07177F0005C8C5 /* ServerResponse.swift in Sources */,
 				80E9D9E31C03488C00B47055 /* TriangleAndSquare.swift in Sources */,
+				8080180D1C9303C3004E5432 /* TestEnumsAndStructs.swift in Sources */,
 				609870921C2D57D8006D4CD6 /* SwiftStrings.swift in Sources */,
 				8032A6571BD7C540009FB051 /* Shape.swift in Sources */,
 				6081F3921C21D2C8007DFF59 /* SwiftBooleans.swift in Sources */,
@@ -413,6 +424,7 @@
 				60E3592A1BE7C7340019301C /* Circle.swift in Sources */,
 				800FAC571C072B020005C8C5 /* SimpleClass.swift in Sources */,
 				8032A6611BD7D336009FB051 /* Basics.swift in Sources */,
+				808018111C930496004E5432 /* TestProtocolsAndExtensions.swift in Sources */,
 				80F05CC71C0E02F40084DA66 /* ConstantsAndVariables.swift in Sources */,
 				8032A65B1BD7D025009FB051 /* ArraysAndDictionaries.swift in Sources */,
 				6081F3961C21E4BE007DFF59 /* SwiftOptionals.swift in Sources */,

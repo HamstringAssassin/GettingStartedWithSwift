@@ -13,6 +13,12 @@ class NamedShape {
 	var numSides: Int = 0
 	var name: String
 	
+	func testNamedShape(){
+		let namedShape = NamedShape(name: "triange")
+		namedShape.numSides = 3
+		print(namedShape.simpleDescription())
+	}
+	
 	init(name: String) {
 		self.name = name
 	}

@@ -9,7 +9,7 @@
 import Foundation
 
 class SwiftClosures {
-    /**
+	/**
      * Closures are self contained blocks of functionality that can be passed around and used in your code.
      Closures in swift are similar to blocks in C and objective-C
      
@@ -23,23 +23,31 @@ class SwiftClosures {
      values from their surrounding context
      
      */
-	
 	func testingSwiftClosures() {
 		
 		let closureExample = SwiftClosures()
-		closureExample.closureExample()
-		closureExample.closureExample2()
-		closureExample.closureExample3()
-		closureExample.closureExample4()
+//		closureExample.closureExample()
+//		closureExample.closureExample2()
+//		closureExample.closureExample3()
+//		closureExample.closureExample4()
+//		
+//		closureExample.someFunctionThatTakesAClosure { () -> Void in
+//			//closure body goes here.
+//		}
+//		
+//		closureExample.someFunctionThatTakesAClosure() {
+//			//trailing closure's body goes here.
+//		}
+//		closureExample.closureExample6()
 		
-		closureExample.someFunctionThatTakesAClosure { () -> Void in
-			//closure body goes here.
-		}
+		let incrementByTen = makeIncrimenter(forIncriment: 10)
+		print(incrementByTen()) // returns 10
+		print(incrementByTen()) // returns 20
+		print(incrementByTen()) // returns 30
 		
-		closureExample.someFunctionThatTakesAClosure() {
-			//trailing closure's body goes here.
-		}
-		closureExample.closureExample6()
+		let alsoIncrementByTen = incrementByTen
+		
+		print(alsoIncrementByTen())
 	}
 	
     func closureExample() {
@@ -48,7 +56,6 @@ class SwiftClosures {
         func backwards(s1:String, _ s2:String) -> Bool {
             return s1 > s2
         }
-		
 		print(names.sort(backwards))
     }
     
@@ -56,10 +63,16 @@ class SwiftClosures {
      The below method uses a closure instead of creating a nested method
      */
     func closureExample2() {
-        let names = ["Alan","Claire","Lola","Teddy"]
+        let names = ["Alan","Claire","Lola","Teddy", "martha"]
+		
+		let forwardClosure = {(s1:String, s2:String)->Bool in
+			return s1 < s2
+		}
         let reversed = names.sort({(s1:String, s2:String) -> Bool in
             return s1 > s2
         })
+		
+		print(names.sort(forwardClosure))
         print(reversed)
     }
 	

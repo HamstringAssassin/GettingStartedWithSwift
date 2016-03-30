@@ -30,6 +30,13 @@ class EquilateralTriangle: NamedShape {
         numSides = 3
     }
 	
+	func testEquilateralTriangle() {
+		let triangle = EquilateralTriangle(sideLength: 3.1, name: "A triangle")
+		print(triangle.perimeter)
+		triangle.perimeter = 9.9
+		print(triangle.sideLength)
+	}
+	
 	/*
 	In the setter for perimeter, the new value has the implicit name newValue
 	*/

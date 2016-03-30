@@ -10,6 +10,13 @@ import Foundation
 
 class ArraysAndDictionaries {
 	
+	
+	func testArraysAndDictionaries() {
+		let arraysAndDic = ArraysAndDictionaries()
+		arraysAndDic.basicDictionariesAndArrays()
+	}
+	
+	
 	func basicDictionariesAndArrays(){
 		// Creating a dictionary
 		var occupations = [

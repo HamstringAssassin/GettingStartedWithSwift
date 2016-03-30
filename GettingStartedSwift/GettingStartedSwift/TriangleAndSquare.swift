@@ -17,6 +17,17 @@ class TriangleAndSquare: Shape {
 	The Code you provide, is run any time the value changes outside of an initializer
 	*/
 	
+	func testTriangleAndSquare() {
+		let triangleAndSquare = TriangleAndSquare(size: 10, name: "Another Test Shape")
+		print("Square Side Length: \(triangleAndSquare.square.sideLength)")
+		print("Triangle Side Length: \(triangleAndSquare.triangle.sideLength)")
+		
+		triangleAndSquare.square = Square(sideLength: 50, name: "Larger Square")
+		print("Triangle Side Length: \(triangleAndSquare.triangle.sideLength)")
+		print("Square Side Length: \(triangleAndSquare.square.sideLength)")
+	
+	}
+	
 	var triangle: EquilateralTriangle {
 		willSet {
 			square.sideLength = newValue.sideLength
