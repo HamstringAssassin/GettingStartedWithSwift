@@ -12,11 +12,24 @@ class SwiftStrings {
 	
 	func testingSwiftStrings() {
 		SwiftStrings.stringCharacters()
-		SwiftStrings.specialCharatersInStringLiterals()
-		SwiftStrings.specialCharactersCounting()
-		SwiftStrings.stringIndexes()
-		SwiftStrings.insertingAndRemovingWithStrings()
+        SwiftStrings.stringCharactersIndices()
+        SwiftStrings.checkingStringEquality()
+//		SwiftStrings.specialCharatersInStringLiterals()
+//		SwiftStrings.specialCharactersCounting()
+//		SwiftStrings.stringIndexes()
+//		SwiftStrings.insertingAndRemovingWithStrings()
 	}
+    
+    class func checkingStringEquality() {
+        let aString = "this is a string"
+        let bString = "This is a string"
+        
+        if aString == bString {
+            print("They are the same")
+        } else {
+            print("They are different")
+        }
+    }
     
     class func checkingStringContents() {
         let emptyString = ""
@@ -24,6 +37,10 @@ class SwiftStrings {
         
         if emptyString.isEmpty {
             print("Nothing to see here.")
+        }
+        
+        if alternativeEmptyString.isEmpty {
+            print("Nothing to see here either.")
         }
     }
     
@@ -38,8 +55,15 @@ class SwiftStrings {
         print(constantString)
     }
     
+    class func stringCharactersIndices() {
+        let aString = "this is a string"
+        for idx in aString.characters.indices {
+            print(idx)
+        }
+    }
+    
     class func stringCharacters() {
-        var aString = "this is a string"
+        let aString = "this is a string"
         
         for character in aString.characters {
             print(character)
