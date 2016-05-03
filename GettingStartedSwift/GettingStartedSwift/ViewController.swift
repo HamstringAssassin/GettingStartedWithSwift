@@ -18,13 +18,13 @@ class ViewController: UIViewController {
 //		SwiftTuples().testingSwiftTuples()
 //		SwiftOptionals().testingSwiftOptions()
 //		SwiftErrorHandling().testingSwiftErrorHandling()
-		SwiftStrings().testingSwiftStrings()
+//		SwiftStrings().testingSwiftStrings()
 //		SwiftCollectionTypes().testingSwiftCollectionTypes()
 //		SwiftControlFlow().testingSwiftControlFlow()
 //		SwiftControlTransferStatements().testingSwiftcontrolTransferStatements()
 //		SwiftFunctions().testingSwiftFunctions()
 
-//		SwiftClosures().testingSwiftClosures()
+		SwiftClosures().testingSwiftClosures()
 	}
 }
 

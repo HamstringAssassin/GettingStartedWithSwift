@@ -9,6 +9,9 @@
 import Foundation
 
 class SwiftClosures {
+	
+	var x = 10
+	
 	/**
      * Closures are self contained blocks of functionality that can be passed around and used in your code.
      Closures in swift are similar to blocks in C and objective-C
@@ -39,15 +42,21 @@ class SwiftClosures {
 //			//trailing closure's body goes here.
 //		}
 //		closureExample.closureExample6()
+//		
+//		let incrementByTen = makeIncrimenter(forIncriment: 10)
+//		print(incrementByTen()) // returns 10
+//		print(incrementByTen()) // returns 20
+//		print(incrementByTen()) // returns 30
+//		
+//		let alsoIncrementByTen = incrementByTen
+//		
+//		print(alsoIncrementByTen())
 		
-		let incrementByTen = makeIncrimenter(forIncriment: 10)
-		print(incrementByTen()) // returns 10
-		print(incrementByTen()) // returns 20
-		print(incrementByTen()) // returns 30
+		closureExample.testingFunctionsWithClosures()
+		print(closureExample.x) // should print 200
 		
-		let alsoIncrementByTen = incrementByTen
-		
-		print(alsoIncrementByTen())
+		completionHandlers.first?()
+		print(closureExample.x)
 	}
 	
     func closureExample() {
@@ -151,5 +160,32 @@ class SwiftClosures {
 		return incrimenter
 	}
 	
+	//Non escaping closures
 	
+	// marking a closure with @noescape allows you to use self implicitly within the closure
+	func someFunctionWithNoescapeClosure(@noescape closure: () -> Void) {
+		closure()
+	}
+	
+	/*
+	One way that a closure can escape is by being stored ina variable that is defined outside the function.
+	As an example, many functions that start an asyncronous operation take a closure arguement as a  completion handler.
+	The function returns after it starts the operation, but the closure isnt called until the operation is completed. 
+	The closure needs to escape, to be called later. ie...
+	*/
+	var completionHandlers: [() -> Void] = []
+	
+	func someFunctionWithEscapingClosure(completionHandler: () -> Void) {
+		completionHandlers.append(completionHandler)
+	}
+	
+	func testingFunctionsWithClosures () {
+
+		someFunctionWithEscapingClosure { () -> Void in
+			self.x = 100
+		}
+		someFunctionWithNoescapeClosure { () -> Void in
+			x = 200
+		}
+	}
 }
