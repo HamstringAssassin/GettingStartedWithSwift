@@ -41,6 +41,7 @@
 		8070992A1C04B134008BA6A3 /* Suit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807099291C04B134008BA6A3 /* Suit.swift */; };
 		8070992C1C04BA90008BA6A3 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8070992B1C04BA90008BA6A3 /* Card.swift */; };
 		80763C331C3A866300C49418 /* SwiftControlFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80763C321C3A866300C49418 /* SwiftControlFlow.swift */; };
+		807AA24E1CDCC958003E2335 /* ModelWithCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807AA24D1CDCC958003E2335 /* ModelWithCallback.swift */; };
 		8080180D1C9303C3004E5432 /* TestEnumsAndStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8080180C1C9303C3004E5432 /* TestEnumsAndStructs.swift */; };
 		8080180F1C930426004E5432 /* TestGenerics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8080180E1C930426004E5432 /* TestGenerics.swift */; };
 		808018111C930496004E5432 /* TestProtocolsAndExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808018101C930496004E5432 /* TestProtocolsAndExtensions.swift */; };
@@ -100,6 +101,7 @@
 		807099291C04B134008BA6A3 /* Suit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Suit.swift; sourceTree = "<group>"; };
 		8070992B1C04BA90008BA6A3 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		80763C321C3A866300C49418 /* SwiftControlFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftControlFlow.swift; sourceTree = "<group>"; };
+		807AA24D1CDCC958003E2335 /* ModelWithCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelWithCallback.swift; sourceTree = "<group>"; };
 		8080180C1C9303C3004E5432 /* TestEnumsAndStructs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEnumsAndStructs.swift; sourceTree = "<group>"; };
 		8080180E1C930426004E5432 /* TestGenerics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestGenerics.swift; sourceTree = "<group>"; };
 		808018101C930496004E5432 /* TestProtocolsAndExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestProtocolsAndExtensions.swift; sourceTree = "<group>"; };
@@ -251,6 +253,14 @@
 			name = "Enum and Structs";
 			sourceTree = "<group>";
 		};
+		807AA24B1CDCC915003E2335 /* ModelWithCallback */ = {
+			isa = PBXGroup;
+			children = (
+				807AA24D1CDCC958003E2335 /* ModelWithCallback.swift */,
+			);
+			name = ModelWithCallback;
+			sourceTree = "<group>";
+		};
 		80DAA94E1C0CA61200285F3D /* Generics */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +294,7 @@
 		80F05CC51C0E01570084DA66 /* The Basics */ = {
 			isa = PBXGroup;
 			children = (
+				807AA24B1CDCC915003E2335 /* ModelWithCallback */,
 				80F05CC61C0E02F40084DA66 /* ConstantsAndVariables.swift */,
 				6081F3911C21D2C8007DFF59 /* SwiftBooleans.swift */,
 				6081F3931C21D90D007DFF59 /* SwiftTuples.swift */,
@@ -410,6 +421,7 @@
 				805CB8FF1BD63A890014C23D /* ViewController.swift in Sources */,
 				80C6B3B91C88705E008CAAA7 /* CurryingFunctions.swift in Sources */,
 				807099281C0464F1008BA6A3 /* Rank.swift in Sources */,
+				807AA24E1CDCC958003E2335 /* ModelWithCallback.swift in Sources */,
 				8080180F1C930426004E5432 /* TestGenerics.swift in Sources */,
 				609870901C2C6B9F006D4CD6 /* SwiftErrorHandling.swift in Sources */,
 				800FAC521C07177F0005C8C5 /* ServerResponse.swift in Sources */,

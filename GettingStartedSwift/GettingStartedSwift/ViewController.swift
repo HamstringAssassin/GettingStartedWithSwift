@@ -24,7 +24,12 @@ class ViewController: UIViewController {
 //		SwiftControlTransferStatements().testingSwiftcontrolTransferStatements()
 //		SwiftFunctions().testingSwiftFunctions()
 
-		SwiftClosures().testingSwiftClosures()
+//		SwiftClosures().testingSwiftClosures()
+		
+		let callbackExample = ModelWithCallback { (result) -> Void in
+			print(result)
+		}
+		
 	}
 }
 
