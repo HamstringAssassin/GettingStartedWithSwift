@@ -25,10 +25,14 @@ class ViewController: UIViewController {
 //		SwiftFunctions().testingSwiftFunctions()
 
 //		SwiftClosures().testingSwiftClosures()
-		
-		let callbackExample = ModelWithCallback { (result) -> Void in
-			print(result)
-		}
+		ArraysAndDictionaries().testArraysAndDictionaries()
+        
+//		let callbackExample = ModelWithCallback { (result) -> Void in
+//			print(result)
+//		}
+        
+        
+        
 		
 	}
 }
