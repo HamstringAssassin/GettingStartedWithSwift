@@ -23,7 +23,7 @@ class Maths {
 		var sum = 0
 		for number in numbers {
 			sum += number
-			num++
+			num += 1
 		}
 		median = sum / num
 		return median

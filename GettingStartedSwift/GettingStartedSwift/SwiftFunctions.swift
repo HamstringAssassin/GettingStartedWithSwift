@@ -30,7 +30,7 @@ class SwiftFunctions {
 		swiftFunctionsInstance.defaultParameterFunction(13)
 		swiftFunctionsInstance.defaultParameterFunction()
 		
-		var mathFunction:(Int, Int) -> Int = swiftFunctionsInstance.addTwoInts
+		let mathFunction:(Int, Int) -> Int = swiftFunctionsInstance.addTwoInts
 		print("Result: \(mathFunction(2,3))")
 		
 		let variableParameters = SwiftFunctions().variableParameterFunction("Hello", totalLength: 10, pad: "-");

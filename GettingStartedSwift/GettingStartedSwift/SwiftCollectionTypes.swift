@@ -26,17 +26,17 @@ class SwiftCollectionTypes {
 	}
 	
     class func createEmptyArray() {
-        var someInts = [Int]()
-        var someIntsFull = Array<Int>()
+        let someInts = [Int]()
+        let someIntsFull = Array<Int>()
         print("SomeIntsFull is of type int and has \(someIntsFull.count) values")
         print("SomeInts is of type int and has \(someInts.count) values")
     }
     
     class func arrayWithRepeatableVlaue() {
-        var threeDouble = [Double](count: 3, repeatedValue: 0.0)
+        let threeDouble = [Double](count: 3, repeatedValue: 0.0)
         print(threeDouble)
-        var anotherThreeDoubles = [Double](count: 3, repeatedValue: 0.0)
-        var sixDoubles = threeDouble + anotherThreeDoubles
+        let anotherThreeDoubles = [Double](count: 3, repeatedValue: 0.0)
+        let sixDoubles = threeDouble + anotherThreeDoubles
         print(sixDoubles)
         
         //You can create arrays with literals
