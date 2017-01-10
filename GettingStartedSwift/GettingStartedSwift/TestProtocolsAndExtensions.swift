@@ -33,7 +33,7 @@ class TestProtocolsAndExtensions {
 	}
 
 	func simpleEnumExample() {
-		var c = SimpleEnum.Base
+		var c = SimpleEnum.base
 		c.adjust()
 		print(c.simpleDescription)
 	}
@@ -46,13 +46,13 @@ class TestProtocolsAndExtensions {
 		and you provide the raw value when you define the enum.
 		*/
 		
-		let success = ServerResponse.Result("6:00 am", "8:01 pm")
-		let failure = ServerResponse.Error("Out of Cheese")
+		let success = ServerResponse.result("6:00 am", "8:01 pm")
+		let failure = ServerResponse.error("Out of Cheese")
 		
 		switch success {
-		case let .Result(sunrise, sunset):
+		case let .result(sunrise, sunset):
 			print("Sunrise is at \(sunrise) and sunset is at \(sunset)")
-		case let .Error(error):
+		case let .error(error):
 			print("Failure: \(error)")
 		}
 	}

@@ -14,28 +14,28 @@ have methods associated with them
 */
 
 enum Rank: Int {
-	case Ace = 1
-	case Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten
-	case Jack, Queen, King
+	case ace = 1
+	case two, three, four, five, six, seven, eight, nine, ten
+	case jack, queen, king
 	
-	static let allValues = [Ace, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King]
+	static let allValues = [ace, two, three, four, five, six, seven, eight, nine, ten, jack, queen, king]
 	
 	func simpleDescription() -> String {
 		switch self {
-		case .Ace:
+		case .ace:
 			return "Ace"
-		case .Jack:
+		case .jack:
 			return "Jack"
-		case .Queen:
+		case .queen:
 			return "Queen"
-		case .King:
+		case .king:
 			return "King"
 		default:
 			return String(self.rawValue)
 		}
 	}
 	
-	func compareRanks(newRank: Rank) -> Rank {
+	func compareRanks(_ newRank: Rank) -> Rank {
 		let value = max(self.rawValue, newRank.rawValue)
 		return Rank(rawValue:(value))!
 	}

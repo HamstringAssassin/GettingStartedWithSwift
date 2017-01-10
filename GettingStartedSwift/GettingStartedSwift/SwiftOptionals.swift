@@ -57,7 +57,7 @@ class SwiftOptionals {
         }
         
 //        You can use multiple optional bindings in an if along with a where to check for boolean
-        if let numberOne = Int("4"), numberTwo = Int("42") where numberOne < numberTwo {
+        if let numberOne = Int("4"), let numberTwo = Int("42"), numberOne < numberTwo {
             print("\(numberOne) < \(numberTwo)")
         }
     }

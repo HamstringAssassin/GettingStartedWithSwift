@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum FoodError : ErrorType {
+enum FoodError : Error {
     case outOfCleanDishes
     case missingIngredients
     
@@ -56,7 +56,7 @@ class SwiftErrorHandling {
         print("wash dishes")
     }
     
-    class func missingIngredients(ingredients: [String]) {
+    class func missingIngredients(_ ingredients: [String]) {
         print("buy groceries")
     }
     

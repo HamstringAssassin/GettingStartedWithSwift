@@ -12,8 +12,8 @@ class TestGenerics {
 	
 	
 	func optionalType() {
-		var possibleIntegers:OptionalValue<Int> = OptionalValue.None
-		possibleIntegers = OptionalValue.Some(1000)
+		var possibleIntegers:OptionalValue<Int> = OptionalValue.none
+		possibleIntegers = OptionalValue.some(1000)
 		print(possibleIntegers)
 	}
 	

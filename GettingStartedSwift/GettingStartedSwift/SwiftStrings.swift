@@ -105,9 +105,9 @@ class SwiftStrings {
         let greeting = "Guten Tag!"
         print(greeting.startIndex)
         print(greeting.endIndex)
-        print(greeting.endIndex.predecessor())
-        print(greeting.startIndex.successor())
-        let index = greeting.startIndex.advancedBy(7)
+        print(greeting.characters.index(before: greeting.endIndex))
+        print(greeting.characters.index(after: greeting.startIndex))
+        let index = greeting.characters.index(greeting.startIndex, offsetBy: 7)
         print(index)
         
         for idx in greeting.characters.indices {
@@ -117,12 +117,12 @@ class SwiftStrings {
     
     class func insertingAndRemovingWithStrings() {
         var welcome = "Hello"
-        welcome.insert("!", atIndex: welcome.endIndex)
+        welcome.insert("!", at: welcome.endIndex)
         print(welcome)
         
         
 //        to insert the contents of another string at indexes...
-        welcome.insertContentsOf(" there".characters, at: welcome.endIndex.predecessor())
+        welcome.insert(contentsOf: " there".characters, at: welcome.characters.index(before: welcome.endIndex))
         print(welcome)
     }
 }

@@ -37,15 +37,15 @@ class Functions: NSObject {
 		let mappedNumbers2 = numbers.map({ number in 3 * number })
 		print(mappedNumbers2)
 		
-		let sortednumbers = numbers.sort{ $0 > $1 }
+		let sortednumbers = numbers.sorted{ $0 > $1 }
 		print(sortednumbers)
 	}
 	
-	func lessThanTen(number: Int) -> Bool {
+	func lessThanTen(_ number: Int) -> Bool {
 		return number < 10
 	}
 	
-	func hasAnyMatches (list: [Int], condition:(Int) -> Bool) -> Bool {
+	func hasAnyMatches (_ list: [Int], condition:(Int) -> Bool) -> Bool {
 		for item in list {
 			if condition(item) {
 				return true
@@ -69,7 +69,7 @@ class Functions: NSObject {
 	//Fucntions are a firs-Class type. This means that a function can return another function as its value
 	func makeIncriment() -> ((Int) -> Int) {
 		
-		func addOne(number: Int) -> Int {
+		func addOne(_ number: Int) -> Int {
 			return 1 + number
 		}
 		

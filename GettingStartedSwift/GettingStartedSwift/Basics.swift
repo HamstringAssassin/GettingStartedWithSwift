@@ -16,7 +16,7 @@ class Basics: NSObject {
 		basics.basicStrings()
 	}
 	
-	func greet (name:String, day:String) -> String {
+	func greet (_ name:String, day:String) -> String {
 		return "Hello \(name), today is \(day)"
 	}
 

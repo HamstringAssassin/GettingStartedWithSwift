@@ -34,8 +34,8 @@ class ArraysAndDictionaries {
         let emptyDictionary = [String:Float]()
         
         // this information can also be infered. eg
-        let optionalEmptyArray = []
-        let optionalEmptyDictionary = [:]
+        let optionalEmptyArray = [String:String]()
+        let optionalEmptyDictionary = [String:String]()
         
     }
     

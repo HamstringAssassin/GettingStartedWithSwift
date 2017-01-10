@@ -62,10 +62,10 @@ class SwiftClosures {
     func closureExample() {
         let names = ["Alan","Claire","Lola","Teddy"]
         
-        func backwards(s1:String, _ s2:String) -> Bool {
+        func backwards(_ s1:String, _ s2:String) -> Bool {
             return s1 > s2
         }
-		print(names.sort(backwards))
+		print(names.sorted(by: backwards))
     }
     
     /**
@@ -77,11 +77,11 @@ class SwiftClosures {
 		let forwardClosure = {(s1:String, s2:String)->Bool in
 			return s1 < s2
 		}
-        let reversed = names.sort({(s1:String, s2:String) -> Bool in
+        let reversed = names.sorted(by: {(s1:String, s2:String) -> Bool in
             return s1 > s2
         })
 		
-		print(names.sort(forwardClosure))
+		print(names.sorted(by: forwardClosure))
         print(reversed)
     }
 	
@@ -97,7 +97,7 @@ class SwiftClosures {
     
     func closureExample3(){
         let names = ["Alan","Claire","Lola","Teddy"]
-        let reversed = names.sort( { s1, s2 in return s1 > s2 } )
+        let reversed = names.sorted( by: { s1, s2 in return s1 > s2 } )
         print(reversed)
     }
     
@@ -107,7 +107,7 @@ class SwiftClosures {
      */
     func closureExample4() {
         let names = ["Alan","Claire","Lola","Teddy"]
-        let reversed = names.sort( { $0 > $1 } )
+        let reversed = names.sorted( by: { $0 > $1 } )
         print(reversed)
     }
     
@@ -116,15 +116,15 @@ class SwiftClosures {
     and the closure expression is long it can be useful to write it as a trailing closure instead.
     */
     
-    func someFunctionThatTakesAClosure(closure: () -> Void) {
+    func someFunctionThatTakesAClosure(_ closure: () -> Void) {
         // function body goes here.
     }
     //Using the method above for trailing closures...
     func closureExample5() {
         let names = ["Alan","Claire","Lola","Teddy"]
-        let reversed = names.sort() {$0 > $1}
+        let reversed = names.sorted() {$0 > $1}
         
-        let reversed2 = names.sort {$0 > $1}
+        let reversed2 = names.sorted {$0 > $1}
         print(reversed)
         print(reversed2)
     }
@@ -138,8 +138,9 @@ class SwiftClosures {
         let digitNames = [0:"Zero",1:"One",2:"Two",3:"Three",4:"Four",5:"Five",6:"Six",7:"Seven",8:"Eight",9:"Nine"]
         let numbers = [16, 58, 510]
         
-        let strings = numbers.map {
-            (var number) -> String in
+        let strings = numbers.map { (number) -> String in
+//            swift 3
+            var number = number
             var output = ""
             while number > 0 {
                 output = digitNames[number % 10]! + output
@@ -163,7 +164,7 @@ class SwiftClosures {
 	//Non escaping closures
 	
 	// marking a closure with @noescape allows you to use self implicitly within the closure
-	func someFunctionWithNoescapeClosure(@noescape closure: () -> Void) {
+	func someFunctionWithNoescapeClosure(_ closure: () -> Void) {
 		closure()
 	}
 	
@@ -175,7 +176,7 @@ class SwiftClosures {
 	*/
 	var completionHandlers: [() -> Void] = []
 	
-	func someFunctionWithEscapingClosure(completionHandler: () -> Void) {
+	func someFunctionWithEscapingClosure(_ completionHandler: @escaping () -> Void) {
 		completionHandlers.append(completionHandler)
 	}
 	

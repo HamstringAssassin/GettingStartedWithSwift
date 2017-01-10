@@ -16,26 +16,26 @@ In fact, cases where there isnt a meaningful raw value, you dont have to provide
 
 enum Suit {
 	
-	case Spades, Hearts, Diamonds, Clubs
+	case spades, hearts, diamonds, clubs
 	
-	static let allValues = [Spades, Hearts, Diamonds, Clubs]
+	static let allValues = [spades, hearts, diamonds, clubs]
 	
 	func simpleDescription() -> String {
 		switch self {
-		case .Spades:
+		case .spades:
 			return "Spades"
-		case .Hearts:
+		case .hearts:
 			return "Hearts"
-		case .Diamonds:
+		case .diamonds:
 			return "Diamonds"
-		case .Clubs:
+		case .clubs:
 			return "Clubs"
 		}
 	}
 	
 	func color() -> String {
 		var value = ""
-		if self.simpleDescription() == Suit.Spades.simpleDescription() || self.simpleDescription() == Suit.Clubs.simpleDescription() {
+		if self.simpleDescription() == Suit.spades.simpleDescription() || self.simpleDescription() == Suit.clubs.simpleDescription() {
 			value = "Black"
 		} else {
 			value = "Red"

@@ -56,7 +56,7 @@ class SwiftControlTransferStatements {
         print(description)
     }
     
-    class func greet(person:[String : String]) {
+    class func greet(_ person:[String : String]) {
         guard let name = person["name"] else {
             return
         }

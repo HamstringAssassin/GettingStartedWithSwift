@@ -17,7 +17,7 @@ class Maths {
 		print("Median is : \(self.calculateMedian(12,34,23,34,56,34)) ")
 	}
 	
-	func calculateMedian(numbers:Int...) -> Int {
+	func calculateMedian(_ numbers:Int...) -> Int {
 		var median = 0
 		var num = 0
 		var sum = 0
@@ -29,7 +29,7 @@ class Maths {
 		return median
 	}
 	
-	func sumOf(numbers:Int...) -> Int {
+	func sumOf(_ numbers:Int...) -> Int {
 		var sum = 0
 		for number in numbers {
 			sum += number
@@ -45,7 +45,7 @@ class Maths {
 		print(statistics.min)
 	}
 	
-	func calculateStatistics (scores:[Int]) -> (min: Int, max: Int, sum: Int) {
+	func calculateStatistics (_ scores:[Int]) -> (min: Int, max: Int, sum: Int) {
 		// Use a tuple to make a compound value - return multiple values from a function
 		// these values can be refered to by either name or number
 		

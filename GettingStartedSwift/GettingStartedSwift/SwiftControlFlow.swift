@@ -20,7 +20,7 @@ class SwiftControlFlow {
 	*/
 	class func chutesAndLadders() {
 		let finalSquare = 25
-		var board = [Int](count: finalSquare+1, repeatedValue: 0)
+		var board = [Int](repeating: 0, count: finalSquare+1)
 		
 		board[03] = +08
 		board[06] = +11
@@ -37,9 +37,10 @@ class SwiftControlFlow {
 		
 		while square < finalSquare {
 			// roll the dice
-			if ++diceRoll == 7 {
-				diceRoll = 1
-			}
+            // TODO: broken in swift 3
+//			if ++diceRoll == 7 {
+//				diceRoll = 1
+//			}
 			// move by the rolled amount
 			square += diceRoll
 			
@@ -56,7 +57,7 @@ class SwiftControlFlow {
 	*/
 	class func chutesAndLadders2() {
 		let finalSquare = 25
-		var board = [Int](count: finalSquare+1, repeatedValue: 0)
+		var board = [Int](repeating: 0, count: finalSquare+1)
 		
 		board[03] = +08
 		board[06] = +11
@@ -77,9 +78,10 @@ class SwiftControlFlow {
 			square += board[square]
 			
 			// roll the dice
-		if ++diceRoll == 7 {
-			diceRoll = 1
-		}
+//            swift 3
+//		if ++diceRoll == 7 {
+//			diceRoll = 1
+//		}
 		
 			square += diceRoll
 		
