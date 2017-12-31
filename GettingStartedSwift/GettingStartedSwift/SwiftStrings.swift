@@ -57,7 +57,8 @@ class SwiftStrings {
     
     class func stringCharactersIndices() {
         let aString = "this is a string"
-        for idx in aString.characters.indices {
+        
+        for idx in Substring(aString).indices {
             print(idx)
         }
     }
@@ -65,7 +66,7 @@ class SwiftStrings {
     class func stringCharacters() {
         let aString = "this is a string"
         
-        for character in aString.characters {
+        for character in Substring(aString) {
             print(character)
         }
     }

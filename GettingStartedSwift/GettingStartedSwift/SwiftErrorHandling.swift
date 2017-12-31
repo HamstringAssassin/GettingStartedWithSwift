@@ -66,7 +66,7 @@ class SwiftErrorHandling {
             eatASandwich()
         } catch FoodError.outOfCleanDishes {
             washDishes()
-        } catch FoodError.missingIngredients() {
+        } catch FoodError.missingIngredients {
             missingIngredients([""])
         } catch {
             print("i dunno")
