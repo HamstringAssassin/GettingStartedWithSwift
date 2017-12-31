@@ -10,7 +10,7 @@ import Foundation
 
 enum SimpleEnum : ExampleProtocol {
 
-	case Base, Adjusted
+	case base, adjusted
 	
 	var simpleDescription : String {
 		get {
@@ -21,15 +21,15 @@ enum SimpleEnum : ExampleProtocol {
 	
 	func getDescription() -> String {
 		switch self {
-		case .Base:
+		case .base:
 			return "Simple Description"
-		case .Adjusted:
+		case .adjusted:
 			return "Adjusted Description"
 		}
 		
 	}
 	
 	mutating func adjust() {
-		self = SimpleEnum.Adjusted
+		self = SimpleEnum.adjusted
 	}
 }

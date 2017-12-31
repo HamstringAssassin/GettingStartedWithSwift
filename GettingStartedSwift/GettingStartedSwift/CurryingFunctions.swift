@@ -26,7 +26,7 @@ class CurryingFunctions {
 	*	Basic function that takes two ints and returns an int
 	*	of type (int, int) -> int
 	*/
-	func add(a: Int, b: Int) -> Int {
+	func add(_ a: Int, b: Int) -> Int {
 		return a + b
 	}
 	

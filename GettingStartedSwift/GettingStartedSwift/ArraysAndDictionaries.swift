@@ -33,10 +33,6 @@ class ArraysAndDictionaries {
         let emptyArray = [String]()
         let emptyDictionary = [String:Float]()
         
-        // this information can also be infered. eg
-        let optionalEmptyArray = []
-        let optionalEmptyDictionary = [:]
-        
     }
     
     func testMappingArray() {

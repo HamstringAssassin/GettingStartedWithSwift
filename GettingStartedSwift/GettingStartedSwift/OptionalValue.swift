@@ -9,6 +9,6 @@
 import Foundation
 
 enum OptionalValue<Wrapped> {
-	case None
-	case Some(Wrapped)
+	case none
+	case some(Wrapped)
 }

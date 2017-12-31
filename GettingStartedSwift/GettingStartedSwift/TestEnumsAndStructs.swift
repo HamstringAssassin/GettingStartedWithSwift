@@ -23,23 +23,23 @@ class TestEnumsAndStructs {
 	}
 	
 	func fullCard() {
-		let card = Card(rank:Rank.Three, suit: Suit.Spades)
+		let card = Card(rank:Rank.three, suit: Suit.spades)
 		print(card.simpleDescription())
 	}
 	
 	func cardSuits() {
-		let suit = Suit.Clubs
+		let suit = Suit.clubs
 		print(suit.simpleDescription())
 		print(suit.color())
 	}
 	
 	func cardRanks() {
-		let ace = Rank.Ace
+		let ace = Rank.ace
 		print(ace)
-		let three = Rank.Three
-		print(ace.compareRanks(Rank.King))
-		print(three.compareRanks(Rank.King))
-		print(three.compareRanks(Rank.Two))
+		let three = Rank.three
+		print(ace.compareRanks(Rank.king))
+		print(three.compareRanks(Rank.king))
+		print(three.compareRanks(Rank.two))
 	}
 
 }

@@ -8,18 +8,18 @@
 
 import Foundation
 
-typealias completionHandlerType = (result:[String]) -> Void
+typealias completionHandlerType = ([String]) -> Void
 
 class ModelWithCallback {
 	
 	var handler:completionHandlerType!
 	
-	init(completionHandler: completionHandlerType) {
+	init(completionHandler: @escaping completionHandlerType) {
 		
 		self.handler = completionHandler
 		
 		let test:String = "test"
-		
-		self.handler(result: [test])
+        
+        self.handler([test])
 	}
 }

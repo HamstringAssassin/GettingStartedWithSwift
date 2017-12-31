@@ -43,20 +43,20 @@ class SwiftFunctions {
 		
 	}
 	
-	func curriedFunction(name: String) -> String {
+	func curriedFunction(_ name: String) -> String {
 		return "Hello World, " + name
 	}
 	
-    func sayHello(personName:String) -> String {
+    func sayHello(_ personName:String) -> String {
         let greeting = "hello, \(personName)"
         return greeting
     }
     
-    func sayHelloAgain(personName: String) -> String {
+    func sayHelloAgain(_ personName: String) -> String {
         return "Hello again, \(personName)"
     }
     
-    func sayHello(personName: String, alreadyGreeted:Bool) -> String {
+    func sayHello(_ personName: String, alreadyGreeted:Bool) -> String {
         if alreadyGreeted {
             return sayHelloAgain(personName)
         } else {
@@ -64,16 +64,16 @@ class SwiftFunctions {
         }
     }
     
-    func printAndCount(stringToPrint: String) -> Int {
+    func printAndCount(_ stringToPrint: String) -> Int {
         print(stringToPrint)
         return stringToPrint.characters.count
     }
     
-    func printWithoutCounting(stringToPrint: String) {
+    func printWithoutCounting(_ stringToPrint: String) {
         printAndCount(stringToPrint)
     }
     
-    func minMax(array: [Int]) -> (min: Int, max:Int) {
+    func minMax(_ array: [Int]) -> (min: Int, max:Int) {
         /**
         *  You can use a tuple type to return multiple values as a single return value
         */
@@ -94,13 +94,13 @@ class SwiftFunctions {
 	*	function Paramter Names - important for understanding the "_" in the parameters of a function
 	*/
 	
-    func someFunction(firstParameterName: Int, secondParameterName: Int) {
+    func someFunction(_ firstParameterName: Int, secondParameterName: Int) {
         // function body goes here
         // firstParameterName and secondParamterName refer to the arguements
         // values for the first and second paramter
     }
 	
-	func someFunctionTwo(firstParameterName: Int, _ secondParameterName: Int) {
+	func someFunctionTwo(_ firstParameterName: Int, _ secondParameterName: Int) {
 		// function body goes here
 		// firstParameterName and secondParamterName refer to the arguements
 		// values for the first and second paramter
@@ -113,11 +113,11 @@ class SwiftFunctions {
 //		print(externalParameterName); - Doesnt work as external paramter name is what is specified externally
 	}
 	
-	func moreExternalParameterNames1(firstName: String, secondName: String) {
+	func moreExternalParameterNames1(_ firstName: String, secondName: String) {
 		print(firstName + " " + secondName)
 	}
 	
-	func moreExternalParameterNames2(firstName firstName: String, secondName: String) {
+	func moreExternalParameterNames2(firstName: String, secondName: String) {
 		print(firstName + " " + secondName)
 	}
 	
@@ -146,7 +146,7 @@ class SwiftFunctions {
 		self.someFunctionThree(externalParamterName: 10);
 	}
 	
-    func defaultParameterFunction(parameterWithDefaultValue:Int = 12) {
+    func defaultParameterFunction(_ parameterWithDefaultValue:Int = 12) {
         // Function body goes here.
         print(parameterWithDefaultValue)
     }
@@ -154,7 +154,8 @@ class SwiftFunctions {
 	/**
 	*	Variable Paramters
 	*/
-	func variableParameterFunction(var string:String, totalLength: Int, pad:Character) -> String {
+	func variableParameterFunction(_ string:String, totalLength: Int, pad:Character) -> String {
+		var string = string
 		let amountToPad = totalLength - string.characters.count
 		if amountToPad < 1 {
 			return string
@@ -169,7 +170,7 @@ class SwiftFunctions {
 	/**
 	*	functions with inOut parameters
 	*/
-	func swapTwoInts(inout a: Int, inout _ b: Int) {
+	func swapTwoInts(_ a: inout Int, _ b: inout Int) {
 		let temporaryA = a
 		a = b
 		b = temporaryA
@@ -178,19 +179,19 @@ class SwiftFunctions {
     /**
     *   using function types
     */
-    func addTwoInts(a: Int, b:Int) -> Int {
+    func addTwoInts(_ a: Int, b:Int) -> Int {
         return a + b
     }
     
-    func multiplyTwoNumbers(a:Int, b:Int) -> Int {
+    func multiplyTwoNumbers(_ a:Int, b:Int) -> Int {
         return a * b
     }
     
-    func chooseStepFunction(backwards:Bool) -> (Int) -> Int {
-        func stepForward(input:Int) -> Int {
+    func chooseStepFunction(_ backwards:Bool) -> (Int) -> Int {
+        func stepForward(_ input:Int) -> Int {
             return input + 1
         }
-        func stepBackward(input:Int) -> Int {
+        func stepBackward(_ input:Int) -> Int {
             return input - 1
         }
         return backwards ? stepBackward : stepForward

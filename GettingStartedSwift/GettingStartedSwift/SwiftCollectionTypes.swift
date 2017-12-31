@@ -33,9 +33,9 @@ class SwiftCollectionTypes {
     }
     
     class func arrayWithRepeatableVlaue() {
-        let threeDouble = [Double](count: 3, repeatedValue: 0.0)
+        let threeDouble = [Double](repeating: 0.0, count: 3)
         print(threeDouble)
-        let anotherThreeDoubles = [Double](count: 3, repeatedValue: 0.0)
+        let anotherThreeDoubles = [Double](repeating: 0.0, count: 3)
         let sixDoubles = threeDouble + anotherThreeDoubles
         print(sixDoubles)
         
@@ -55,17 +55,17 @@ class SwiftCollectionTypes {
         }
         
         //Inserting an item into an array at a specific index
-        shoppingList.insert("Flour", atIndex: 0)
+        shoppingList.insert("Flour", at: 0)
         print(shoppingList)
         //Removing an item. The following can generate a runtime error if the index is out of bounds
-        shoppingList.removeAtIndex(0)
+        shoppingList.remove(at: 0)
         
         for item in shoppingList {
             print(item)
         }
         // If you want the index of each item as well as its value, use emumerate()
         // this returns a tuple with the index and the value
-        for (index, value) in shoppingList.enumerate() {
+        for (index, value) in shoppingList.enumerated() {
             print("Item at index \(index) is \(value).")
         }
     }
@@ -87,7 +87,7 @@ class SwiftCollectionTypes {
         }
         
         favouriteGenres.insert("Jazz")
-        for genre in favouriteGenres.sort() {
+        for genre in favouriteGenres.sorted() {
             print(genre)
         }
     }
@@ -97,13 +97,13 @@ class SwiftCollectionTypes {
         let evenDigits: Set = [0,2,4,6,8]
         let singleDigitPrimeNumbers: Set = [2,3,5,7]
         
-        print(oddDigits.union(evenDigits).sort())
+        print(oddDigits.union(evenDigits).sorted())
         
-        print(oddDigits.intersect(evenDigits).sort())
+        print(oddDigits.intersection(evenDigits).sorted())
         
-        print(oddDigits.subtract(singleDigitPrimeNumbers).sort())
+        print(oddDigits.subtracting(singleDigitPrimeNumbers).sorted())
         
-        print(oddDigits.exclusiveOr(singleDigitPrimeNumbers).sort())
+        print(oddDigits.symmetricDifference(singleDigitPrimeNumbers).sorted())
     }
     
     class func setMembershipAndEquality() {
@@ -111,9 +111,9 @@ class SwiftCollectionTypes {
         let farmAnimals: Set = ["Cow","Chicken","Sheep","Cat","Dog"]
         let cityAnimals: Set = ["Pigeon", "Rat"]
         
-        print(houseAnimals.isSubsetOf(farmAnimals))
-        print(farmAnimals.isSupersetOf(houseAnimals))
-        print(farmAnimals.isDisjointWith(cityAnimals))
+        print(houseAnimals.isSubset(of: farmAnimals))
+        print(farmAnimals.isSuperset(of: houseAnimals))
+        print(farmAnimals.isDisjoint(with: cityAnimals))
     }
     
     class func creatingDictionaries() {

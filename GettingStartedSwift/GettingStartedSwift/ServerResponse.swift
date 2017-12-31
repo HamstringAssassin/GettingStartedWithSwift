@@ -9,7 +9,7 @@
 import Foundation
 
 enum ServerResponse {
-	case Result(String, String)
-	case Error(String)
+	case result(String, String)
+	case error(String)
 }
 
