@@ -25,27 +25,27 @@ class SwiftOptionals {
 		let int:Int = 0
 		let optionalInt:Int? = nil
 		
-		print("Optional int? can be nil: \(optionalInt). Wheras int 'int' cannot: \(int)")
+        print("Optional int? can be nil: \(String(describing:optionalInt)). Wheras int 'int' cannot: \(int)")
 	}
 	
     class func optionalsExample() {
         let possibleNumber = "123"
         let convertedNumber = Int(possibleNumber)
         print("Possible number is \(possibleNumber)")
-        print("converted number is \(convertedNumber)")  //prints the integer 123 becuase the string 123 can be converted into an integer.
+        print("converted number is \(String(describing: convertedNumber))")  //prints the integer 123 becuase the string 123 can be converted into an integer.
 		
         let possibleNumberTwo = "Two"
 		print("Possible Number Two: \(possibleNumberTwo)")
 
         let possibleConvertedNumberTwo = Int(possibleNumberTwo)
-        print("Possible Converted Number Two: \(possibleConvertedNumberTwo)")   // prints nil. the value "two" cannot be converted into an integer by the Int initializer.
+        print("Possible Converted Number Two: \(String(describing:possibleConvertedNumberTwo))")   // prints nil. the value "two" cannot be converted into an integer by the Int initializer.
                                                                                 //So it returns an optional.
         
 //        convertedNumber and possibleConvertedNumberTwo are inferred to be fo type "Int?", or optional Int
 
 //        You can use if statements to find out if a value contains nil
         if convertedNumber != nil {
-            print("Possible number contains something... \(convertedNumber)")
+            print("Possible number contains something... \(String(describing: convertedNumber))")
         }
 //        the method above is also known as forced unwrapping
         

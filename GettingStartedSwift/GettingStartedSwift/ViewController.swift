@@ -21,11 +21,11 @@ class ViewController: UIViewController {
 //		SwiftStrings().testingSwiftStrings()
 //		SwiftCollectionTypes().testingSwiftCollectionTypes()
 //		SwiftControlFlow().testingSwiftControlFlow()
-//		SwiftControlTransferStatements().testingSwiftcontrolTransferStatements()
+        SwiftControlTransferStatements().testingSwiftcontrolTransferStatements()
 //		SwiftFunctions().testingSwiftFunctions()
 
 //		SwiftClosures().testingSwiftClosures()
-		ArraysAndDictionaries().testArraysAndDictionaries()
+//        ArraysAndDictionaries().testArraysAndDictionaries()
         
 //		let callbackExample = ModelWithCallback { (result) -> Void in
 //			print(result)

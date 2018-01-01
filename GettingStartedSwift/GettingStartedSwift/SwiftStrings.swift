@@ -96,22 +96,22 @@ class SwiftStrings {
     
     class func specialCharactersCounting() {
         var word = "cafe"
-        print("The number of charcters in \(word) is: \(word.characters.count)")
+        print("The number of charcters in \(word) is: \(Substring(word).count)")
         
         word += "\u{301}"
-        print("The number of charcters in \(word) is: \(word.characters.count)")
+        print("The number of charcters in \(word) is: \(Substring(word).count)")
     }
     
     class func stringIndexes() {
         let greeting = "Guten Tag!"
         print(greeting.startIndex)
         print(greeting.endIndex)
-        print(greeting.characters.index(before: greeting.endIndex))
-        print(greeting.characters.index(after: greeting.startIndex))
-        let index = greeting.characters.index(greeting.startIndex, offsetBy: 7)
+        print(Substring(greeting).index(before: greeting.endIndex))
+        print(Substring(greeting).index(after: greeting.startIndex))
+        let index = Substring(greeting).index(greeting.startIndex, offsetBy: 7)
         print(index)
         
-        for idx in greeting.characters.indices {
+        for idx in Substring(greeting).indices {
             print("\(greeting[idx])", terminator: "")
         }
     }
@@ -123,7 +123,7 @@ class SwiftStrings {
         
         
 //        to insert the contents of another string at indexes...
-        welcome.insert(contentsOf: " there".characters, at: welcome.characters.index(before: welcome.endIndex))
+        welcome.insert(contentsOf: Substring(" there"), at: Substring(welcome).index(before: welcome.endIndex))
         print(welcome)
     }
 }

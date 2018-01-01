@@ -32,7 +32,7 @@ class SwiftControlTransferStatements {
         let puzzleInput = "great minds think alike"
         var puzzleOutput = ""
         
-        for character in puzzleInput.characters {
+        for character in Substring(puzzleInput) {
             switch character {
                 case "a","e","i","o","u"," ":
                 continue
