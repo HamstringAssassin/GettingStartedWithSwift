@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 //		SwiftStrings().testingSwiftStrings()
 //		SwiftCollectionTypes().testingSwiftCollectionTypes()
 //		SwiftControlFlow().testingSwiftControlFlow()
-        SwiftControlTransferStatements().testingSwiftcontrolTransferStatements()
+//        SwiftControlTransferStatements().testingSwiftcontrolTransferStatements()
 //		SwiftFunctions().testingSwiftFunctions()
 
 //		SwiftClosures().testingSwiftClosures()
@@ -31,7 +31,8 @@ class ViewController: UIViewController {
 //			print(result)
 //		}
         
-        
+        let exampleClass = ExampleClass()
+        exampleClass.canAllBirdsFly()
         
 		
 	}
