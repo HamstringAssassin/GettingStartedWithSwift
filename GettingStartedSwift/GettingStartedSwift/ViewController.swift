@@ -31,8 +31,11 @@ class ViewController: UIViewController {
 //			print(result)
 //		}
         
-        let exampleClass = ExampleClass()
-        exampleClass.canAllBirdsFly()
+//        let exampleClass = ExampleClass()
+//        exampleClass.canAllBirdsFly()
+        
+        BasicTypeCasting.checkType()
+        BasicTypeCasting.libraryContents()
         
 		
 	}
