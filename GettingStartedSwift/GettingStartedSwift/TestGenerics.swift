@@ -8,9 +8,26 @@
 
 import Foundation
 
+class Item<T> {
+    var value: T {
+        didSet {
+            
+        }
+    }
+    
+    init(value: T) {
+        self.value = value
+    }
+}
+
 class TestGenerics {
-	
-	
+    
+    func testItem() {
+        let testItem = Item(value: "")
+        
+    }
+    
+    
 	func optionalType() {
 		var possibleIntegers:OptionalValue<Int> = OptionalValue.none
 		possibleIntegers = OptionalValue.some(1000)
